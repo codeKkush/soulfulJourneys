@@ -41,11 +41,7 @@
     <section class="registration">
       <div class="register-form">
         <h1>Register <span>Here</span></h1>
-        <form
-          id="registration-form"
-          action=""
-          onsubmit="return  sendEmail()"
-        >
+        <form id="registration-form" action="" onsubmit="return  sendEmail()">
           <input
             type="text"
             name="myname1"
@@ -69,9 +65,16 @@
           />
           <input type="number" name="myage" placeholder="Age" id="" required />
           <h4>Gender</h4>
-          <input type="radio" name="mygender" id="" required /> Male &nbsp;
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-          <input type="radio" name="mygender" id="" /> Female
+          <input type="radio" name="gender" value="Male" id="male" required />
+          Male
+          <input
+            type="radio"
+            name="gender"
+            value="Female"
+            id="female"
+            required
+          />
+          Female
           <h4>Departure</h4>
           <input type="datetime-local" name="departuredate" id="" required />
           <h4>Return</h4>
@@ -168,28 +171,30 @@
     <script type="text/javascript">
       // Initialize Email.js with your public API key
       emailjs.init("pS2AS3EBaW0JlrSH6"); // Replace with your Email.js public API key
-    
+
       // Function to send email when the form is submitted
-      window.onload = function() {
-        document.getElementById('registration-form').addEventListener('submit', function(event) {
-          event.preventDefault();
-    
-          // Get the form element.
-          const form = document.querySelector("#registration-form");
-    
-          // Send the form data to Email.js.
-          emailjs.sendForm("service_9k8kpwp", "template_d4ltz8c", form).then(
-            function (response) {
-              // Reset the form after successful submission.
-              document.getElementById("registration-form").reset();
-              alert("Thank you! Your registration has been submitted.");
-            },
-            function (error) {
-              console.error("Email send failed:", error);
-            }
-          );
-        });
+      window.onload = function () {
+        document
+          .getElementById("registration-form")
+          .addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            // Get the form element.
+            const form = document.querySelector("#registration-form");
+
+            // Send the form data to Email.js.
+            emailjs.sendForm("service_9k8kpwp", "template_d4ltz8c", form).then(
+              function (response) {
+                // Reset the form after successful submission.
+                document.getElementById("registration-form").reset();
+                alert("Thank you! Your registration has been submitted.");
+              },
+              function (error) {
+                console.error("Email send failed:", error);
+              }
+            );
+          });
       };
     </script>
-   </body>
+  </body>
 </html>
