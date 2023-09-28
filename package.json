@@ -1,0 +1,30 @@
+{
+  "name": "soulfuljourneys",
+  "version": "1.0.0",
+  "description": "<h2 align=\"center\">Firstflight Travels</h2> <div align=\"center\"> <p>A travel website project created using HTML, CSS and JavaScript.</p> <a href=\"https://mohdrahil101.github.io/firstflight-travels/\" target=\"_blank\"><strong>➥ Live Demo</strong></a> </div> <br/><br/> <b>Screenshots:</b> <br/><br/> <img src=\"https://github.com/mohdrahil101/firstflight-travels/blob/main/readme%20images/readme-image.jpg\"></img>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-rashi:codeKkush/soulfulJourneys.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "eslint": "^8.50.0",
+    "next": "^13.5.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "20.7.1",
+    "@types/react": "18.2.23",
+    "typescript": "^5.2.2"
+  }
+}
