@@ -720,14 +720,14 @@ form textarea {
 }
 
 .register-form {
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 20px;
 }
 
 .register-form form input {
-  color: white;
+  color: #191919;
   padding: 17px;
-  background-color: #191919;
+  background-color: #fffefd;
   font-size: 20px;
   outline: none;
   border: none;
@@ -895,5 +895,11 @@ form textarea {
 
   .location-section {
     padding: 90px 20px 00px;
+  }
+
+  .checkbox-div {
+    display: flex;
+    flex-direction: column;
+
   }
 }
