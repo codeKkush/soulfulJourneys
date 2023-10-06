@@ -14,7 +14,10 @@
     href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 </head>
 
 <body>
@@ -118,7 +121,7 @@
 
       <a href="./location-kasol&kheerganga.html" target="_blank">
         <div class="col-content">
-          <img src="./files/l2.jpg" alt="">
+          <img src="./files/kasol main.jpeg" alt="">
           <h5>Kasol&Kheerganga</h5>
           <p>Himachal Pradesh</p>
         </div>
@@ -126,33 +129,9 @@
 
       <a href="./location-rishikesh.html" target="_blank">
         <div class="col-content">
-          <img src="./files/l3.jpg" alt="">
+          <img src="./files/Rishikesh/River-Rafting.jpg" alt="">
           <h5>Rishikesh</h5>
           <p>Uttarakhand</p>
-        </div>
-      </a>
-
-      <a href="./locations.html#bali" target="_blank">
-        <div class="col-content">
-          <img src="./files/l4.jpg" alt="">
-          <h5>Jaipur</h5>
-          <p>Rajasthan</p>
-        </div>
-      </a>
-
-      <a href="./locations.html#dubai" target="_blank">
-        <div class="col-content">
-          <img src="./files/l5.jpg" alt="">
-          <h5>Mcleodganj&Triund</h5>
-          <p>Himachal Pradesh</p>
-        </div>
-      </a>
-
-      <a href="./locations.html#geneva" target="_blank">
-        <div class="col-content">
-          <img src="./files/l6.jpg" alt="">
-          <h5>Bir</h5>
-          <p>Himachal Pradesh</p>
         </div>
       </a>
 
@@ -169,7 +148,7 @@
   <!-- Showcase Carousel -->
   <section class="showcase-carousel-wrapper carousel-container container">
     <button id="showcaseCarouselLeft" type="button" class="left-arrow carousel-control">
-      <
+      < 
     </button>
     <div class="infinite-carousel" id="showcase-carousel">
       <div class="infinite-carousel-container" id="showcase-carousel-container">
@@ -184,102 +163,6 @@
     <button id="showcaseCarouselRight" type="button" class="right-arrow carousel-control">
       >
     </button>
-  </section>
-
-  <!-- Packages -->
-
-  <section class="package d-none" id="package">
-    <div class="package-title">
-      <h2>Packages</h2>
-    </div>
-
-    <div class="package-content">
-
-      <div class="box">
-        <div class="image">
-          <img src="./files/p1.jpg" alt="">
-          <h3>Rs.9,999/-</h3>
-        </div>
-
-        <div class="dest-content">
-          <div class="location">
-            <h4>Bronze</h4>
-            <ul class="pac-details">
-              <li>2 Star Hotel</li>
-              <li>5 Nights Stay</li>
-              <li>Free photo Session</li>
-              <li>Friendly Tour Guide</li>
-              <li>24/7 Customer Help Center</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="box">
-        <div class="image">
-          <img src="./files/p2.jpg" alt="">
-          <h3>Rs.19,999/-</h3>
-        </div>
-
-        <div class="dest-content">
-          <div class="location">
-            <h4>Silver</h4>
-            <ul class="pac-details">
-              <li>3 Star Hotel</li>
-              <li>7 Nights Stay</li>
-              <li>Free photo Session</li>
-              <li>Friendly Tour Guide</li>
-              <li>24/7 Customer Help Center</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="box">
-        <div class="image">
-          <img src="./files/p3.jpg" alt="">
-          <h3>Rs.29,999/-</h3>
-        </div>
-
-        <div class="dest-content">
-          <div class="location">
-            <h4>Gold</h4>
-            <ul class="pac-details">
-              <li>4 Star Hotel</li>
-              <li>10 Nights Stay</li>
-              <li>Breakfast and Dinner</li>
-              <li>Free photo Session</li>
-              <li>Friendly Tour Guide</li>
-              <li>24/7 Customer Help Center</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="box">
-        <div class="image">
-          <img src="./files/p4.jpg" alt="">
-          <h3>Rs.39,999/-</h3>
-        </div>
-
-        <div class="dest-content">
-          <div class="location">
-            <h4>Platinum</h4>
-            <ul class="pac-details">
-              <li>5 Star Hotel</li>
-              <li>14 Nights Stay</li>
-              <li>Breakfast, Lunch and Dinner</li>
-              <li>Bornfire</li>
-              <li>Free photo Session</li>
-              <li>Friendly Tour Guide</li>
-              <li>24/7 Customer Help Center</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
   </section>
 
   <!-- Newsletter -->
@@ -330,6 +213,21 @@
       <p>Copyright © 2023 Soulful Journeys All Rights Reserved.
     </div>
   </section>
+  <script>
+    $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+            items: 1, // Number of items to display
+            loop: true, // Enable loop
+            autoplay: true, // Enable autoplay
+            autoplayTimeout: 3000, // Autoplay interval in milliseconds
+            autoplayHoverPause: true, // Pause autoplay on hover
+            nav: true, // Show navigation arrows
+            dots: true // Show navigation dots
+        });
+    });
+</script>
+</body>
+</html>
 
   <script src="./js/common.js"></script>
   <script src="./js/index.js"></script>

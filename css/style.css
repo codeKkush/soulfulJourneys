@@ -15,7 +15,7 @@
 /* Infinite Carousel */
 .carousel-container {
   width: 1440px;
-  max-width: 90%;
+  max-width: 80%;
   margin: 0 auto;
   position: relative;
 }
@@ -47,6 +47,7 @@
 .carousel-item {
   width: 100%;
   margin-right: 2%;
+  margin-left: 2%;
 }
 .carousel-control {
   position: absolute;
@@ -73,6 +74,7 @@
 }
 .showcase-carousel-wrapper {
   margin-top: 3rem;
+  width: 100vw;
 }
 
 .banner {
