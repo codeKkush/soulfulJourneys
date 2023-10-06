@@ -4,17 +4,3 @@ const navbar = document.querySelector("ul.navbar");
 const toggleMenu = () => {
   navbar.classList.toggle("show");
 }
-
-// Owl Carousel logic
-$(document).ready(function () {
-  $(".owl-carousel").owlCarousel({
-    items: 1,
-    loop: true,
-    margin: 10,
-    autoplay: true,
-    autoplayTimeout: 3000,
-    nav: true,
-    dots: true,
-    navText: ["Prev", "Next"]
-  });
-});
