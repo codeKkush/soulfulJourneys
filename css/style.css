@@ -12,24 +12,67 @@
   display: none !important;
 }
 
-/* Owl Carousel Logic */
-.owl-container {
-  max-width: 1440px;
-  width: 90%;
+/* Infinite Carousel */
+.carousel-container {
+  width: 1440px;
+  max-width: 90%;
   margin: 0 auto;
   position: relative;
 }
-.owl-control {
-  position: absolute;
-}
-.full-carousel-img {
-  position: relative;
-}
-.full-carousel-img img {
+.infinite-carousel {
   width: 100%;
-  max-height: 48rem;
+  overflow: hidden;
+}
+.infinite-carousel-container {
+  display: flex;
+  align-items: center;
+  transition: transform 0.6s;
+}
+.carousel-item {
+  min-width: 100%;
+  width: 100%;
+}
+.left-arrow, .right-arrow {
+  position: relative;
+  height: 2rem;
+  width: 2rem;
+  cursor: pointer;
+  font-size: 2rem;
+}
+.left-arrow box-icon, .right-arrow box-icon {
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+}
+.carousel-item {
+  width: 100%;
+  margin-right: 2%;
+}
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  z-index: 10;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.carousel-control.left-arrow {
+  left: -2.4rem;
+}
+.carousel-control.right-arrow {
+  right: -2.4rem;
+}
+
+/* Showcase carousel on homepage */
+.showcase-carousel-item img {
+  width: 100%;
+  height: 40rem;
   object-fit: cover;
   -o-object-fit: cover;
+}
+.showcase-carousel-wrapper {
+  margin-top: 3rem;
 }
 
 .banner {
